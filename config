@@ -1,0 +1,32 @@
+{
+  "domain": "japscan.si",
+  "endpoints": {
+    "search": {
+      "method": "post",
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded"
+      },
+      "path": "/ls/",
+      "data": "search="
+    },
+    "mangas": {
+      "method": "get",
+      "path": "/mangas/",
+      "queryParameters": {
+        "sort": "updated",
+        "p": null
+      }
+    },
+    "bds": {
+      "method": "get",
+      "path": "/bds/",
+      "queryParameters": {
+        "sort": "updated",
+        "p": null
+      }
+    }
+  },
+  "maintenance": false,
+  "minVersion": "0.0.1",
+  "updatedAt": 1759573968432
+}
