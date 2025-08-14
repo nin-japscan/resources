@@ -1,0 +1,30 @@
+{
+  "domain": "japscan.foo",
+  "endpoints": {
+    "scan": {
+      "method": "get",
+      "subdomain": "c4",
+      "path": "/",
+      "queryParameters": {}
+    },
+    "mangas": {
+      "method": "get",
+      "path": "/mangas/",
+      "queryParameters": {
+        "sort": "updated",
+        "p": null
+      }
+    },
+    "bds": {
+      "method": "get",
+      "path": "/bds/",
+      "queryParameters": {
+        "sort": "updated",
+        "p": null
+      }
+    }
+  },
+  "maintenance": false,
+  "minVersion": "0.0.1",
+  "updatedAt": 1772302892040
+}
