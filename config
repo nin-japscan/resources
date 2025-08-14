@@ -1,0 +1,35 @@
+{
+  "domain": "japscan.si",
+  "endpoints": {
+    "search": {
+      "method": "post",
+      "headers": {
+        "content-type": "application/x-www-form-urlencoded"
+      },
+      "path": "/ls/",
+      "data": "search=§query§"
+    },
+    "mangas": {
+      "method": "get",
+      "path": "/mangas/",
+      "queries": {
+        "popular": "?sort=popular&p=§page§",
+        "updated": "?sort=updated&p=§page§",
+        "latest": "?sort=date_desc&p=§page§"
+      }
+    },
+    "bds": {
+      "method": "get",
+      "path": "/bds/",
+      "queries": {
+        "popular": "?sort=popular&p=§page§",
+        "updated": "?sort=updated&p=§page§",
+        "latest": "?sort=date_desc&p=§page§"
+      }
+    }
+  },
+  "maintenance": false,
+  "minVersion": "0.0.1",
+  "tokenExp": 1800000,
+  "updatedAt": 1758741134420
+}
