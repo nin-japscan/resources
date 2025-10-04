@@ -1,13 +1,13 @@
 {
-  "domain": "japscan.si",
+  "domain": "japscan.vip",
   "endpoints": {
-    "search": {
-      "method": "post",
-      "headers": {
-        "content-type": "application/x-www-form-urlencoded"
-      },
-      "path": "/ls/",
-      "data": "search="
+    "scan": {
+      "method": "get",
+      "subdomain": "c4",
+      "path": "/",
+      "queryParameters": {
+        "o": "1"
+      }
     },
     "mangas": {
       "method": "get",
@@ -28,5 +28,5 @@
   },
   "maintenance": false,
   "minVersion": "0.0.1",
-  "updatedAt": 1759573968432
+  "updatedAt": 1760109893165
 }
